@@ -97,10 +97,10 @@ class T_LSTM_AE(object):
         self.bc_enc = [self.init_bias(self.hidden_dim_enc[i], name='Cell_Hidden_bias_enc_' + str(i)) \
                        for i in range(self.n_encoders)]
 
-        self.W_decomp_enc = [self.init_weights(self.hidden_dim_enc[i], self.hidden_dim_enc[i], name='Input_Hidden_weight_enc_' + str(i)) \
+        self.W_decomp_enc = [self.init_weights(self.hidden_dim_enc[i], self.hidden_dim_enc[i], name='Decomposition_Hidden_weight_enc_' + str(i)) \
                              for i in range(self.n_encoders)]
 
-        self.b_decomp_enc = [self.init_bias(self.hidden_dim_enc[i], name='Input_Hidden_bias_enc_' + str(i)) \
+        self.b_decomp_enc = [self.init_bias(self.hidden_dim_enc[i], name='Decomposition_Hidden_bias_enc_' + str(i)) \
                              for i in range(self.n_encoders)]
 
 
@@ -140,10 +140,10 @@ class T_LSTM_AE(object):
         self.bc_dec = [self.init_bias(self.hidden_dim_dec[i], name='Cell_Hidden_bias_dec_' + str(i)) \
                        for i in range(self.n_decoders)]
 
-        self.W_decomp_dec = [self.init_weights(self.hidden_dim_dec[i], self.hidden_dim_dec[i], name='Input_Hidden_weight_dec_' + str(i)) \
+        self.W_decomp_dec = [self.init_weights(self.hidden_dim_dec[i], self.hidden_dim_dec[i], name='Decomposition_Hidden_weight_dec_' + str(i)) \
                              for i in range(self.n_decoders)]
                              
-        self.b_decomp_dec = [self.init_bias(self.hidden_dim_dec[i], name='Input_Hidden_bias_dec_' + str(i)) \
+        self.b_decomp_dec = [self.init_bias(self.hidden_dim_dec[i], name='Decomposition_Hidden_bias_dec_' + str(i)) \
                              for i in range(self.n_decoders)]
 
     def init_parameters_output(self):
@@ -355,7 +355,7 @@ class T_LSTM_AE(object):
     # get reconstuction loss
     def get_reconstruction_loss(self):
         outputs = self.get_decoder_outputs() # get the output from decoder
-        loss = tf.reduce_mean(tf.square(self.input - outputs)) # square of difference between input and output
+        loss = tf.reduce_sum(tf.square(self.input - outputs)) # square of difference between input and output
         return loss
 
     # heuristic decaying function g(delta_t)
