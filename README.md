@@ -12,5 +12,16 @@ Code is compatible with tensorflow version 1.6.0 and Pyhton 3.6.4.
 1. Allow users to customize the number of encoders and decoders and the dimensions within each encoder/decoder.
 
 
+## Forker's note for the layperson
 
+Example of LSTM learning:
+https://www.youtube.com/watch?v=Ipi40cb_RsI&t=254s
+
+LSTM's have made a lot of news lately with things powering things like deepfakes and much of the AI work coming out of Google. They work really well with learning from things like video, audio, or games because there is a uniform time step or "tick" in between each piece of data.
+
+T-LSTM's are a modified version of these neurons which are designed to allow them to better understand data where the time step is not uniform, such as in healthcare when doctor's visits can be either grouped close together or further apart.
+
+T-LSTM's are currently only being used in healthcare and some other realms, but could prove to be very powerful model for analyzing many kinds of data.
+
+In addition, using T-LSTM's with Generative Adversarial Networks could allow for extremely powerful predictive capability on many different kinds of data. 
 
