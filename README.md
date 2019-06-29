@@ -17,11 +17,11 @@ Code is compatible with tensorflow version 1.6.0 and Pyhton 3.6.4.
 Example of LSTM learning:
 https://www.youtube.com/watch?v=Ipi40cb_RsI&t=254s
 
-LSTM's have made a lot of news lately with things powering things like deepfakes and much of the AI work coming out of Google. They work really well with learning from things like video, audio, or games because there is a uniform time step or "tick" in between each piece of data.
+LSTM's have made a lot of news lately with things powering things like deepfakes and much of the AI work coming out of Google. They work really well with learning from things like video, audio, or games because there is a uniform time step or "tick" in between each piece of data. Video is often 24 frames per second, Audio is often 48000 samples per second, board games often sequential "turn taking", and video games can run anywhere from 60 to 200+ "ticks" per second.
 
 T-LSTM's are a modified version of these neurons which are designed to allow them to better understand data where the time step is not uniform, such as in healthcare when doctor's visits can be either grouped close together or further apart.
 
 T-LSTM's are currently only being used in healthcare and some other realms, but could prove to be very powerful model for analyzing many kinds of data.
 
-In addition, using T-LSTM's with Generative Adversarial Networks (GANs) could allow for extremely powerful predictive capability on many different kinds of data. 
+In addition, using T-LSTM's with Generative Adversarial Networks (GANs) could allow for extremely powerful predictive capability on many different kinds of data.
 
