@@ -23,5 +23,5 @@ T-LSTM's are a modified version of these neurons which are designed to allow the
 
 T-LSTM's are currently only being used in healthcare and some other realms, but could prove to be very powerful model for analyzing many kinds of data.
 
-In addition, using T-LSTM's with Generative Adversarial Networks (GANs) could allow for extremely powerful predictive capability on many different kinds of data.
+In addition, using T-LSTM's with Generative Adversarial Networks (GANs) could allow for extremely powerful predictive capability on many different kinds of data (e.g. stocks, etc.).
 
