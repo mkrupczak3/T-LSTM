@@ -33,9 +33,11 @@ https://www.ijcai.org/proceedings/2019/0607.pdf
 
 
 Example of a GAN used with regular LSTM cells:
-
-
 http://roseyu.com/time-series-workshop/submissions/2019/timeseries-ICML19_paper_37.pdf
+
+
+Rehosted Code as used in the DeepCredit paper:
+https://github.com/mkrupczak3/DeepCredit
 
 
 # Time-Aware Long-Short Term Memory
