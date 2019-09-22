@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=Ipi40cb_RsI&t=254s
 
 LSTM's have made a lot of news lately with things powering things like deepfakes and much of the AI work coming out of Google. They are essentially neural nets or "brains in the computer" that can be taught a sequence of data, and have the ability to use their memory from past data to predict future events/data. They work really well with learning from things like video, audio, or games because there is a uniform time step or "tick" in between each piece of data. Video is often 24 frames per second, Audio is often 48000 samples per second, board games often involve sequential "turn taking", and video games can run anywhere from 60 to 200+ "ticks" per second.
 
-T-LSTM's or "Time-Aware Long Short Term Memory" cells are a modified version of these neurons which are designed to allow them to better understand more kinds of real world data where the time step is not uniform, such as in healthcare when doctor's visits can be either grouped close together or further apart (observe "delta T" in the following image). 
+T-LSTM's or "Time-Aware Long Short Term Memory" cells are a modified version of these neurons which are designed to allow them to better understand more kinds of real world data where the time step is not uniform, such as in healthcare when doctor's visits can be either grouped close together or further apart (observe "delta T" and the upper left section in the following image to see the modification on the cell). 
 
 
 ![TLSTMCELLPICTURE](https://raw.githubusercontent.com/mkrupczak3/T-LSTM/master/TLSTM_CELL_SIMPLE.png "TLSTM Cell")
