@@ -39,6 +39,9 @@ http://roseyu.com/time-series-workshop/submissions/2019/timeseries-ICML19_paper_
 Rehosted Code as used in the DeepCredit paper:
 https://github.com/mkrupczak3/DeepCredit
 
+Medium article on LSTM cells:
+https://medium.com/mlreview/understanding-lstm-and-its-diagrams-37e2f46f1714
+
 
 # Time-Aware Long-Short Term Memory
 (modifications of original code from https://github.com/illidanlab/T-LSTM)
