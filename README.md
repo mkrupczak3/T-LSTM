@@ -1,6 +1,6 @@
 # Forker's note for the layperson
 
-Example of LSTM learning:
+Example of LSTM learning (MariFlow - Self-Driving Mario Kart w/Recurrent Neural Network):
 https://www.youtube.com/watch?v=Ipi40cb_RsI&t=254s
 
 LSTM's have made a lot of news lately with things powering things like deepfakes and much of the AI work coming out of Google. They are essentially neural nets or "brains in the computer" that can be taught a sequence of data, and have the ability to use their memory from past data to predict future events/data. They work really well with learning from things like video, audio, or games because there is a uniform time step or "tick" in between each piece of data. Video is often 24 frames per second, Audio is often 48000 samples per second, board games often involve sequential "turn taking", and video games can run anywhere from 60 to 200+ "ticks" per second.
