@@ -17,7 +17,7 @@ T-LSTM's are currently only being used in some narrow realms, but could prove to
 
 In addition, using T-LSTM's with Generative Adversarial Networks (GANs) could allow for extremely powerful predictive capability on many different kinds of real world data (e.g. stocks, etc.).
 
-IQVIA seems to have the most advanced research and usage with this technology so far.
+IQVIA seems to have the most advanced research and usage with this technology of those publicly publishing so far.
 
 More info:
 
